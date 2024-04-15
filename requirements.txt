@@ -11,4 +11,3 @@ pymongo>=3.11.1
 dnspython==2.0.0
 
 aiofiles
-dotenv
