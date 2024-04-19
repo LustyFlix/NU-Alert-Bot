@@ -89,7 +89,7 @@ CREATOR = get_env(
     )
 )
 # Interval between each check
-REQUEST_INTERVAL = get_env("REQUEST_INTERVAL", 60)
+REQUEST_INTERVAL = get_env("REQUEST_INTERVAL", 3600)
 # path to store LOG files
 LOG_FILE_ZZGEVC = get_env("LOG_FILE_ZZGEVC", "bot/NUAlertBot.log")
 # Ensure Timezone is IST
