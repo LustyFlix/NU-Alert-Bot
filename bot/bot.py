@@ -38,6 +38,9 @@ class Bot(Client):
     def __init__(self):
         
         self.LOGGER = LOGGER
+        self.LOGGER(__name__).info(
+            f"\n\n[*] Starting Init...\n"
+        )
 
     async def start(self):
         super().__init__(
