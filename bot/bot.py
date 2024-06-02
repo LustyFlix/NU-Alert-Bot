@@ -35,6 +35,10 @@ import sys
 class Bot(Client):
     """ modded client for NU-Alert-Bot """
 
+    def __init__(self):
+        
+        self.LOGGER = LOGGER
+
     async def start(self):
         super().__init__(
             "NU-Alert-Bot",
@@ -45,8 +49,7 @@ class Bot(Client):
                 "root": "bot/plugins"
             },
             workers=TG_BOT_WORKERS
-        )
-        self.LOGGER = LOGGER
+        ) 
         await super().start()
         usr_bot_me = await self.get_me()
         self.set_parse_mode(enums.ParseMode.HTML)
